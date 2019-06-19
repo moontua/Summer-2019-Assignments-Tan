@@ -1,0 +1,23 @@
+#main {
+	width: 700px;
+	height: 500px;
+	background-color: blue;
+	border: 1px black dashed;
+	margin-right: auto;
+	margin-left: auto;
+}
+#header {
+	width: 700px;
+	height: 100px;
+	background-color: blue;
+	border: 1px black dotted;
+	margin: 0 auto 0 auto;
+}
+#header {
+	width: 700px;
+	height: 100px;
+	background-color: orange;
+	border: 1px black double;
+	margin-right: auto;
+	margin-left: auto;
+}
