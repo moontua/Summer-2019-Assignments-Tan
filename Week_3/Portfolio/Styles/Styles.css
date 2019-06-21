@@ -14,7 +14,9 @@ header {
     background-color: white;
     font-size: 24px;
 }
-
+#head{
+	opacity: 0.25;
+}
 main {
     width: 700px;
     /*height: 100px;*/
@@ -81,11 +83,13 @@ a {
 #hello-image #cup {
     width: 700px;
     border-radius: 20px;
+    opacity: .25;
 }
-
+	
 #para {
 	text-align: center;
 	background-color: red;
+	width:500;
 }
 a:link {
     color: pink;
