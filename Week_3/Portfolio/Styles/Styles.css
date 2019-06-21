@@ -4,7 +4,7 @@ body {
     background-size: cover;
 }
 #container{
-    width: 10px;
+    margin: 10 auto;
 }
 header {
     width: 700px;
@@ -37,12 +37,10 @@ main {
     color: darkgray;
     text-align: center;
 }
-}
 
 footer {
     width: 700px;
     /* height: 100px;*/
-    text-align: right;
     border: 1px black dotted;
     margin: 0 auto;
     margin-left: auto;
@@ -62,7 +60,6 @@ footer {
 li {
     border: solid #00ffeb 2px;
 }
-
 footer p
     {
     font-size: 50px;
