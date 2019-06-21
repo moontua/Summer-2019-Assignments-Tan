@@ -3,7 +3,9 @@ body {
     background-image: url("../images/nen.jpg");
     background-size: cover;
 }
-
+#container{
+    width: 10px;
+}
 header {
     width: 700px;
     /*height: 500px;*/
@@ -15,7 +17,7 @@ header {
     font-size: 24px;
 }
 #head{
-	opacity: 0.25;
+	opacity: .5;
 }
 main {
     width: 700px;
@@ -28,6 +30,12 @@ main {
     margin-left: auto;
     margin-right: auto;
     background-color: floralwhite;
+}
+ main h1 {
+    font-size: 50px;
+    font-family: cursive;
+    color: darkgray;
+    text-align: center;
 }
 }
 
@@ -44,7 +52,7 @@ footer {
     background-color: floralwhite;
 }
 
-h1 {
+ header h1 {
     font-size: 100px;
     font-family: cursive;
     color: darkgray;
@@ -52,15 +60,15 @@ h1 {
 }
 
 li {
-    border: solid red 2px;
+    border: solid #00ffeb 2px;
 }
 
-p,
+footer p
     {
-    font-size: 100px;
+    font-size: 50px;
     font-family: "Arial", sans-serif;
     color: darkblue;
-    /*text-align: */
+    text-align: center;
 }
 
 #logo img {
@@ -89,10 +97,21 @@ a {
 #para {
 	text-align: center;
 	background-color: red;
-	width:500;
+	width:500px;
+}
+ul {
+	list-style-type: none;
+}
+li {
+    border-radius: 5px;
+    padding: 10px;
+    display:inline;
+    margin-right: 20px;
 }
 a:link {
     color: pink;
+    text-decoration: none;
+
 }
 
 a:visited {
@@ -101,6 +120,7 @@ a:visited {
 
 a:hover {
     color: red;
+    text-decoration: underline;
 }
 
 a:active {
