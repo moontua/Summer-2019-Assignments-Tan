@@ -46,19 +46,31 @@ h1 {
 	color: darkgray;
 	text-align: center;
 }
-p {
-	width: 700px;
-    font-size: 36px;
+li {
+	border: solid red 2px;
+}
+p, {
+    font-size: 100px;
     font-family:"Arial", sans-serif; 
     color: darkblue;
-    text-align: center;
-    background-color: green;
+    /*text-align: */
+}
+#logo img{
+	border-radius: 50%;
 }
 a {
 	font-size: 36;
 	font-family: "arial";
 	color: darkblue;
 	text-align: center;
+}
+#hello-image img {
+	width:500px;
+	border-radius: 20px;
+    text-align: 0 center;
+}
+#hello-image #cup {
+	width:700px;
 }
 a:link {
     color: pink;
