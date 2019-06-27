@@ -12,46 +12,52 @@
     		border:1px black solid;
     		border-radius: 20px; 
     		position: absolute;
-    		
-
     	}
     	.card>p {
-    		font-family: "arial", sans-serif;
-    		font-size: 48px;
-    		margin-block-start:0;
-    		margin-block-end: 0;
-    		margin-inline-start:0;
-    		margin-inline-end:0; 
-    		margin-left:20px;
-    		margin-top:15px;
-    		margin-top: 20px;
-    		margin-left: 15px;
-    		z-index: 0;
+    		font-family: "Arial", sans-serif;
+            font-size: 48px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            margin-left: 20px;
+            margin-top: 15px;
     	}
     	#first {
     		left: 10px;
     		top:10px;
     		background-color: beige;
+    		color: red;
     	}
     	#second {
     		left: 80px;
     		top:80px;
     		background-color: cyan;
+    		color: red;
     	}
     	#third {
     		left: 150px;
     		top:150px;
     		background-color: pink;
+    		color: black;
     	}
     	#fourth {
-    		left: 10px;
-    		top:10px;
-    		background-color: beige;
+    		left: 220px;
+    		top: 220px;
+    		background-color: cyan;
+    		color: red;
     	}
     	#fifth {
-    		left: 10px;
-    		top:10px;
-    		background-color: beige;
+    		left: 290px;
+    		top:290px;
+    		background-color: pink;
+    		color: black;
+    	}
+    	.black {
+    		color: black;
+    	}
+    	.red {
+    		color: red;
     	}
     </style>
 </head>
@@ -59,20 +65,25 @@
 <body>
 	<p>this is a poker hand</p>
     <div id="hand">
-        <div class="card" id="first">
+        <div class="card red" id="first">
             <p>A</p>
+            <img src="images/red-heart.svg"/>
         </div>
-        <div class="card" id="second">
+        <div class="card red" id="second">
             <p>A</p>
+            <img src="images/red-diamond.svg"/>
         </div>
-        <div class="card" id="third">
+        <div class="card black" id="third">
             <p>A</p>
+            <img src="images/black-heart.svg"/>
         </div>
-        <div class="card" id="fourth">
+        <div class="card red" id="fourth">
             <p>A</p>
+            <img src="images/black-3-flowers.svg"/>
         </div>
-        <div class="card" id="fifth">
+        <div class="card black" id="fifth">
             <p>9</p>
+            <img src="images/black-heart.svg"/>
         </div>
     </div>
 </body>
