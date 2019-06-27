@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS-Practice</title>
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <style>
+    body {
+        background-color: red;
+        text-align: center;
+    }
+
+    .hello {
+        font-size: 50px;
+    }
+
+    p span.hello {
+        text-decoration: underline;
+    }
+
+    #outer .inner {
+        font-family: cursive;
+        font-size: 30px;
+    }
+
+    h2 span.hello {
+        text-decoration: line-through underline;
+    }
+
+    #red,
+    #green,
+    #blue {
+        width: 400px;
+        height: 400px;
+        border: 2px black solid;
+        margin: 10px;
+        /*(to seperate the boxes)*/
+        display: inline-block;
+        font-size: 300px
+    }
+
+    .text {
+        display: block;
+    }
+
+    ul {
+        list-style-type: circle;
+        border: 1px black solid;
+    }
+
+    li {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="outer">
+            <div>item1</div>
+            <div>item2</div>
+            <div>item3</div>
+            <p class="inner">hi there</p>
+            <p> hello <span class="hello">There</span>, I am a p tag</p>
+            <h2 class="innder">how are you <span class="hello">doing</span>, I am an h1 tag.</h2>
+        </div>
+    </div>
+    <div id="red">A</div>
+    <div id="green">B</div>
+    <div id="blue">C</div>
+    <ul>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+    </ul>
+</body>
+
+</html>

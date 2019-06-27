@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CSS Practice</title>
+  <style>
+  	body {
+  		background-color: blue;
+  	}
+  	body {
+  		background-color: red;
+  	}
+  	div main p {
+  		color: white;
+  	}
+  	body div div main p {
+  		color: yellow;
+  	}
+  	body > div > main > p {
+  		color: cyan;
+  	}
+  	#italic {
+  		font-size: 150px;
+
+  	}
+  	.hello {
+  		text-decoration: underline;
+  		font-size: 50px;
+  	}
+  </style>
+</head>
+
+<body>
+<div id="container">
+	<header class="hello">
+		<h1>header</h1>
+		<p>this is the <span>header</span> section</p>
+	</header>
+	<main>
+		<h1>main</h1>
+		<p>this is the main section</p>
+		<ol>
+			<li class="hello">hello</li>
+			<li>dog</li>
+			<li class="hello">chicken</li>
+			<li>snake</li>
+			<li class="hello">bird</li>
+		</ol>
+	</main>
+	<div>
+		<header class="hello">
+			<h1>header3</h1>
+			<p>this is the header section3</p>
+	</header>
+	<main >
+		<h1>main3</h1>
+		<p>this is the <span> main</span> section3</p>
+	</main>
+	</div>
+	<footer>
+		<h1 class="hello">footer</h1>
+		<p>this is the <span id="italic">footer</span> section</p>
+	</footer>
+	<div id= "another div">
+		<main>
+			<p>hello there</p>
+		</main>
+	</div>
+</div>
+</body>
+</html>
