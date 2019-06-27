@@ -6,84 +6,102 @@
     <title>CSS-Practice</title>
     <link rel="stylesheet" href="css/styles.css?v=1.0">
     <style>
-    	.card {
-    		width: 320px;
-    		height: 445px;
-    		border:1px black solid;
-    		border-radius: 20px; 
-    		position: absolute;
-    	}
-    	.card>p {
-    		font-family: "Arial", sans-serif;
-            font-size: 48px;
-            margin-block-start: 0;
-            margin-block-end: 0;
-            margin-inline-start: 0;
-            margin-inline-end: 0;
-            margin-left: 20px;
-            margin-top: 15px;
-    	}
-    	#first {
-    		left: 10px;
-    		top:10px;
-    		background-color: beige;
-    		color: red;
-    	}
-    	#second {
-    		left: 80px;
-    		top:80px;
-    		background-color: cyan;
-    		color: red;
-    	}
-    	#third {
-    		left: 150px;
-    		top:150px;
-    		background-color: pink;
-    		color: black;
-    	}
-    	#fourth {
-    		left: 220px;
-    		top: 220px;
-    		background-color: cyan;
-    		color: red;
-    	}
-    	#fifth {
-    		left: 290px;
-    		top:290px;
-    		background-color: pink;
-    		color: black;
-    	}
-    	.black {
-    		color: black;
-    	}
-    	.red {
-    		color: red;
-    	}
+    #hand {
+        margin-top: 100px;
+    }
+
+    .card {
+        width: 320px;
+        height: 445px;
+        border: 1px black solid;
+        border-radius: 20px;
+        position: fixed;
+    }
+
+    .card>p {
+        font-family: "Arial", sans-serif;
+        font-size: 48px;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    #first {
+        left: 10px;
+        top: 10px;
+        background-color: white;
+    }
+
+    #first img {
+        width: 80px;
+    }
+
+    #fourth img {
+        width: 80px;
+    }
+
+
+    #second {
+        left: 80px;
+        top: 80px;
+        background-color: white;
+    }
+
+    #third {
+        left: 150px;
+        top: 150px;
+        background-color: white;
+    }
+
+    #fourth {
+        left: 220px;
+        top: 220px;
+        background-color: white;
+    }
+
+    #fifth {
+        left: 290px;
+        top: 290px;
+        background-color: white;
+    }
+
+    .black {
+        color: black;
+    }
+
+    .red {
+        color: red;
+    }
+    .card img {
+    	margin-left: 8px;
+    }
     </style>
 </head>
-
 <body>
-	<p>this is a poker hand</p>
+    <p>this is a poker hand</p>
     <div id="hand">
         <div class="card red" id="first">
             <p>A</p>
-            <img src="images/red-heart.svg"/>
+            <img src="images/red-heart.svg" />
         </div>
         <div class="card red" id="second">
             <p>A</p>
-            <img src="images/red-diamond.svg"/>
+            <img src="images/red-diamond.svg" />
         </div>
-        <div class="card black" id="third">
-            <p>A</p>
-            <img src="images/black-heart.svg"/>
+        <div class="card red" id="third">
+            <p>7</p>
+            <img src="images/red-diamond.svg" />
         </div>
-        <div class="card red" id="fourth">
+        <div class="card black" id="fourth">
             <p>A</p>
-            <img src="images/black-3-flowers.svg"/>
+            <img src="images/black-3-flowers.svg" />
         </div>
         <div class="card black" id="fifth">
             <p>9</p>
-            <img src="images/black-heart.svg"/>
+            <img src="images/black-heart.svg" />
         </div>
     </div>
 </body>
