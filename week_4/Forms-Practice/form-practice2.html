@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>forms</title>
+    <style>
+        #textstuff {
+  		width: 200px;
+  		height: 50px;
+  		border-radius: 50%;
+  		border: 1px solid grey;
+  		padding: 10px;
+  		background-color: azure;
+  		color: aqua;
+  		text-shadow: 2px 2px #DDDDDD;
+  	}
+  	#textstuff::placeholder {
+  		color: red;
+  		font-size: 12px;
+  	}
+  </style>
+</head>
+
+<body>
+    <form action="www.google.com">
+        <<label for="Phone_Number">Phone Number:</label>
+            <input id="textstuff" type="text" name="marital" placeholder="your phone number" /><br>
+            <input type="text" name="marital" /><br>
+            <label for="Single">Single:</label>
+            <input id="single" type="radio" value="single" name="marital" /><br>
+            <label for="Married">Married:</label>
+            <input id="marries" type="radio" value="married" name="marital" /><br>
+            <label for="Divorced">Divorced:</label>
+            <input id="divorced" type="radio" value="divorced" name="marital" /><br>
+            <label for="decline">Decline to say:</label>
+            <input id="declined" type="radio" value="decline" name="marital" /><br>
+    </form>
+</body>
+
+</html>
