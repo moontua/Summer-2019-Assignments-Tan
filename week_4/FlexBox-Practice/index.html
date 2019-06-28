@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Flexbox</title>
+<style>
+
+	#flexbox {
+		display: flex;
+		background-color: cyan;
+		padding: 50px;
+		justify-content: flex-end;
+	}
+	.child {
+		background-color: floralwhite;
+		width: 100px;
+		height: 100px;
+		border:1px solid black;
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
+	#fourth {
+		order: -2;
+		flex-grow: 2;
+		flex-shrink: 2;
+	}
+	#second {
+		order: -3;
+	}
+</style>
+
+</head>
+
+<body>
+	<div id="flexbox">
+		<div class="child">1</div>
+		<div id="second" class="child">2</div>
+		<div class="child">3</div>
+		<div id ="fourth" class="child">4</div>
+		<div class="child">5</div>
+	</div>
+
+</body>
+</html>
