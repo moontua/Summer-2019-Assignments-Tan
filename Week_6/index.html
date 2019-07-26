@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>boxes</title>
+    <style>
+    #flexbox {
+        display: flex;
+        border: 1px black solid;
+        background-color: cyan;
+        width: 500px;
+        height: 250px;
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+
+    #flexbox>div {
+        width: 164;
+        flex-grow: 1;
+    }
+
+    #iinside {
+        width: 328px !important;
+        border: 1px black solid;
+        margin-top: -1px;
+        margin-left: -1px;
+    }
+
+    /*grid css---------------------------------*/
+    #inside {
+        display: grid;
+        width: 500px;
+        height: 250px;
+        background-color: yellow;
+        border: 1px black solid;
+        grid-template-columns: 1fr 1fr 1fr;
+        box-sizing: border-box;
+        margin-top: -1px;
+        margin-left: -1px;
+
+    }
+
+    #special {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 1px black dashed;
+    }
+    </style>
+</head>
+<body>
+    <h3>This is GridBox</h3>
+    <div>
+        <div id="inside">
+            <div id="special"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <h3>This is FlexBox</h3>
+    <div id="flexbox">
+        
+        <div id="iinside">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+
+</html>

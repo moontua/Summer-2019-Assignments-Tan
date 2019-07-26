@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Grids</title>
+    <style>
+    #container {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+        width: 600px;
+        border-radius: 50%;
+        height: 100%;
+    }
+
+    #container > div {
+    	background-color: red;
+    }
+
+    #container > div {
+        font-size: 0px;
+        border: 1px red solid;
+        text-align: center;
+    }
+    #hello {
+    	grid-column-start: 3;
+    	grid-column-end: 4;
+
+    }
+    #first {
+	border-radius: 100% 0 0 0;
+    }
+    #third {
+    border-radius: 0 100% 0 0;
+    }
+    #sixth {
+    	border-radius:0 0 0 100% ;
+    }
+    #eight {
+    	border-radius: 0 0 100% 0;
+    }
+    #container #hole {
+    	border-radius: 50%;
+    	background-color: white;
+    }
+
+    </style>
+</head>
+
+<body>
+	<div id="container">
+	<div id="first">1</div>
+        <div>2</div>
+        <div id="third">3</div>
+        <div>4</div>
+        <div id="hole"> </div>
+        <div id="hello">5</div>
+        <div id="sixth">6</div>
+        <div>7</div>
+        <div id="eight">8</div>
+    </div>
+    <!-- another way <div id="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div id="hello"> </div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div> </div-->
+</body>
+
+</html>
