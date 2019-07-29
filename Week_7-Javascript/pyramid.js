@@ -88,27 +88,14 @@ for (var i = 0; i < 2; i++) {
     ast1 = ast1 + "* ";
     console.log(ast1);
 }
-
 //going backwark 
-
 var ast1Reverse = " ";
 for (var i = 3; i > 0; i--) {
     ast1Reverse = ast1Reverse + "* ";
 }
 console.log(ast1Reverse);
 
-for (var i = 0; i < 2; i++) {
-    ast1 = ast1 + "* ";
-
-}
-console.log(ast1);
-
-//function::!!!!!!!!!
-//function ast1() {
-
-
-
-for (var e = 3; e > 0; e--) {
+for (var e = 4; e > 0; e--) {
     var ast1Reverse = " ";
     for (var i = e; i > 0; i--) {
         ast1Reverse = ast1Reverse + "* ";
