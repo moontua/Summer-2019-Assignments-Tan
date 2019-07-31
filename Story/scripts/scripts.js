@@ -18,6 +18,14 @@ $(document).ready(function() {
         });
         $("#fast").click(function() {
             $("#dialog").html("<p>the bus hit a new world speed record at 16MPH and John ends up in the news as one of the survivor</p>")
+            $("#dialog").prepend('<img src="images/bus.jpg" alt="fast bus" width="200px" height="200px"/>');
+            $("#dialog").append(`<ul>" 
+            	"<li></li>" 
+            	"<li></li>" 
+            	</ul>`);
+            var string = `
+            <p>paragraph1</p>
+            <p>paragraph2</p>`
             $("#choices").empty();
             $("#choices").append('<button id="book">John writes a book</button>');
             $("#choices").append('<button id="engineer">John studies bus machines</button>');
