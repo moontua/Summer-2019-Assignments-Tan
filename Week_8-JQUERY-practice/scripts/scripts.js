@@ -25,7 +25,7 @@ $(document).ready(function() {
     console.log(object1.age);
 
     $("#box").css({
-        "background-color": "red",
+        //"background-color": "red",
         "border-radius": "50px",
         "margin-left": "100px"
     });
@@ -34,30 +34,59 @@ $(document).ready(function() {
 
     //html jQuery method --> $().html;
     jQuery("#box").html("<p>Hello World!</p>");
+
+    //$().append(); adds to the end of the children of the target.
+    //$().prepend(); adds to the start of the children of the target.
+    $("#box").append("<p>Wecome Home</p>");
+    $("#box").prepend("<h1>Wecome to be here</h1>");
     $("#box p").css('color', "yellow");
     $("#box p").css('font-size', "24px");
     $("#box p").css('padding', "13px");
-    $("#stop").click(function() {
-        $("#box").css('background-color', "red");
+    $("#Stop").click(function() {
+        $("#box").css("background-color", "red");
     });
+
     $("#blue").click(function() {
-        $("#box").css('background-color', "blue");
+        $("#box").css("background-color", "blue");
     });
+
     $("#changeBG").click(function() {
-        $("#box").css('background-color', "green");
+        $("#box").css("background-color", "green");
+
+    });
+
+    $("#disappear").click(function() {
+        $("#box").css("visibility", "hidden");
     });
     $("input").keypress(function(event) {
-        if (event.which == 101) {
-            console.log("you pressed the E key");
+        if (event.which == 100) {
+            console.log("you pressed the D key");
             var currentMargin = $("#box").css("margin-left");
             console.log(currentMargin);
             currentMargin = parseInt(currentMargin);
-        $("#box").css("margin-left",currentMargin + 10);
+            $("#box").css("margin-left", currentMargin + 10);
+        } else if (event.which == 97) {
+            console.log("you pressed the A key");
+            var currentMargin = $("#box").css("margin-left");
+            console.log(currentMargin);
+            currentMargin = parseInt(currentMargin);
+            $("#box").css("margin-left", currentMargin - 10);
+        } else if (event.which == 115) {
+            console.log("you pressed the S key");
+            var currentMargin = $("#box").css("margin-top");
+            console.log(currentMargin);
+            currentMargin = parseInt(currentMargin);
+            $("#box").css("margin-top", currentMargin + 10);
+        } else if (event.which == 119) {
+            console.log("you pressed the W key");
+            var currentMargin = $("#box").css("margin-top");
+            console.log(currentMargin);
+            currentMargin = parseInt(currentMargin);
+            $("#box").css("margin-top", currentMargin - 10);
+        } else {
+            console.log("nothing");
         }
         console.log(event.which);
     });
 });
-
-
-
 //target.action ( callbackfunction(){});
