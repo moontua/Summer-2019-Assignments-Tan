@@ -40,10 +40,10 @@ $(document).ready(function() {
     $("#stop").click(function() {
         $("#box").css('background-color', "red");
     });
-    $("blue").click(function() {
+    $("#blue").click(function() {
         $("#box").css('background-color', "blue");
     });
-    $("changeBG").click(function() {
+    $("#changeBG").click(function() {
         $("#box").css('background-color', "green");
     });
     $("input").keypress(function(event) {
