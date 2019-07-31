@@ -1,0 +1,20 @@
+body {
+	background-color: black;
+	color: #ffffff;
+}
+h1, label {
+	font-family: cursive;
+}
+input, button {
+	width: 300px;
+	height: 50px;
+	border-radius: 30px;
+	padding: 8px;
+	font-family: monospace;
+	font-size: 36px;
+}
+
+button:hover {
+	background-color: blue;
+}
+

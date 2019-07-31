@@ -14,7 +14,6 @@ $(document).ready(function() {
             $("#choices").empty();
             $("#choices").append('<button id="business">John creates a business</button>');
             $("#choices").append('<button id="boat">John decide to go on a boat</button>');
-            
         });
         $("#fast").click(function() {
             $("#dialog").html("<p>the bus hit a new world speed record at 16MPH and John ends up in the news as one of the survivor</p>")
@@ -29,7 +28,7 @@ $(document).ready(function() {
             $("#choices").empty();
             $("#choices").append('<button id="book">John writes a book</button>');
             $("#choices").append('<button id="engineer">John studies bus machines</button>');
-            
+
         });
     });
     $("#car").click(function() {
