@@ -28,7 +28,6 @@ $(document).ready(function() {
             $("#choices").empty();
             $("#choices").append('<button id="book">John writes a book</button>');
             $("#choices").append('<button id="engineer">John studies bus machines</button>');
-
         });
     });
     $("#car").click(function() {
